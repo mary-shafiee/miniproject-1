@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Koh+Santepheap&display=swap');
+body{
+    color: #000;
+    background-color: blue;
+}
+.nav{
+    background-color: #152D35;
+    position: fixed;
+    top: 0 ;
+    left: 0;
+    right: 0;
+    transition:all 0.3s ease-in-out ;
+    font-family: 'Koh Santepheap', cursive;
+
+}
+.nav h1{
+    color: beige;
+}
+.nav .container{
+    
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    transition:all 0.3s ease-in-out ;
+    padding: 20px 15px;
+}
+
+.nav .container >  ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    
+}
+.nav .container >  ul > li > a{
+    text-decoration: none;
+    padding:7px 15px ;
+    color: beige;
+    font-size: 15px;
+    transition:all 0.3s ease-in-out ;
+
+}
+.nav > div > ul > li > a.home , .nav > div > ul > li > a:hover{
+    color: rgb(201, 20, 20);
+    font-weight: bold;
+}
+.nav.nav.active > div > ul > li > a.home , .nav.nav.active > div > ul > li > a:hover{
+    color: rgb(201, 20, 20);
+    font-weight: bold;
+}
+.nav.active{
+    background-color: aliceblue;
+    box-shadow:0 2px 30px rgba(0, 0, 0, 0.5);
+}
+.nav.active  > div > ul > li> a{
+    color: #000;
+}
+.nav.active > div >h1{
+    color: #000;
+}
+.nav.active .container{
+    padding: 10px;
+}
+
