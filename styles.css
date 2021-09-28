@@ -325,3 +325,32 @@ body{
         transform: rotate(450deg);
     }
 }
+/******************************************incrementing-counter********************/
+.increment{
+    position: absolute;
+    top: 1000px;
+    height: 40vh;
+    display: flex;
+    background-color: #A2416B;
+    left: 0;
+    right: 0;
+    text-align: center;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    color: aliceblue;
+}
+.counter-container{
+    margin: 70px 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.counter{
+    font-size: 40px;
+    margin-top: 15px;
+}
+@media (max-width:600){
+    .increment{
+        flex-direction: column;
+    }
+}
