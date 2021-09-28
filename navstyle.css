@@ -12,7 +12,7 @@ body{
     right: 0;
     transition:all 0.3s ease-in-out ;
     font-family: 'Koh Santepheap', cursive;
-
+    z-index: 1;
 }
 .nav h1{
     color: beige;
@@ -244,4 +244,35 @@ body{
         width: 1rem;
         height: 0.5rem;
     }
+}
+
+/*********************************************sound board***************************************/
+.audio{
+    position: absolute;
+    top: 665px;
+    left: 0;
+    height: 20vh;
+    right: 0;
+    background-color: rgb(49, 107, 131);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content:space-around;
+    text-align: center;
+    overflow: hidden;
+}
+.audio-btn{
+    background-color:blueviolet ;
+    border-radius: 20px;
+    border: none;
+    padding: 2vw 2vh;
+    margin: 0.5rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: blanchedalmond;
+    cursor: pointer;
+    width: 7rem;
+}
+.audio-btn:hover{
+    opacity: 0.7;
 }

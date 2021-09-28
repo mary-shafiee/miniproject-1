@@ -2,7 +2,7 @@
 const nav = document.querySelector('.nav');
 window.addEventListener('scroll', fixNav());
 function fixNav(){
-     if(window.scrollY > nav.offsetHeight + 150){
+     if(window.scrollY > nav.offsetHeight +20){
          nav.classList.add('active')
      }else{
          nav.classList.remove('active')
@@ -55,3 +55,28 @@ buttons.forEach(button => {
 
     })
 })
+///////////////////////////////////////sound baard/////////////////////////////////
+const sounds=['harmony' ,'dream']
+
+sounds.forEach(sound => {
+    const btn=document.createElement('button')
+    btn.classList.add('audio-btn')
+    btn.innerText=sound
+    btn.addEventListener('click',() =>{
+        stopSongs()
+        document.getElementById(sound).play()
+       
+    })
+    document.getElementById('audio-button')
+    .appendChild(btn)
+})
+
+function stopSongs(){
+    sounds.forEach(sound =>{
+        const song=document.getElementById(sound)
+        
+
+        song.pause()
+        song.currenTime=0;
+    })
+}
