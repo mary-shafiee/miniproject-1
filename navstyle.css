@@ -3,6 +3,7 @@ body{
     color: #000;
    
 }
+
 .nav{
     background-color: #152D35;
     position: fixed;
@@ -106,3 +107,117 @@ body{
     transform: translateX(148px);
 }
 
+.container2{
+    position:absolute;
+    width: 100%;
+    top: 122px;
+    background-color: #345B63;
+    right: 0;
+    left: 0px;
+    height: 40vw;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+.split{
+    overflow: hidden;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    
+}
+.split.left{
+    left: 0;
+    background: url('img/ui.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.split.left::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(87, 84, 236, 0.5);
+
+}
+.split.right{
+    right: 0;
+    background: url('img/ux.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.split.right::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(43, 43, 43, 0.6);
+
+}
+.split.left ,
+.split.right,
+.split.left::before,
+.split.right::before{
+    transition:all 2000ms ease-in-out;
+}
+.split > h1{
+    font-size: 3rem;
+    color: aliceblue;
+    position: absolute;
+    left: 40%;
+    transform: translateX(-20%);
+    top: 30%;
+    white-space: nowrap;
+}
+.split .button{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+    text-decoration: none;
+    border: #ffff solid 0.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: beige;
+    padding: 1rem;
+    width: 5rem;
+    height: 0.5rem;
+    margin-top: 15%;
+    border-radius: 35px;
+}
+.split .button:hover{
+    background-color: rgba(43, 43, 43, 0.9);
+    color: rgba(5, 5, 255, 0.9);
+    border-color: rgba(43, 43, 43, 0.9);
+}
+.container2.hover-left .left{
+    width:75%;
+}
+.container2.hover-left .right{
+    width: 25%;
+}
+.hover-right .left{
+    width: 25%;
+}
+.hover-right .right{
+    width:75%;
+}
+
+@media only screen and (max-width:900px){
+    h1{
+        font-size: 1rem;
+        top: 10%;
+    }
+    .split.button{
+        margin: 0.8rem;
+        padding: 0.1rem;
+        width: 1rem;
+        height: 0.5rem;
+    }
+}
