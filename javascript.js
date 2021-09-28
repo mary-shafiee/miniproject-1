@@ -80,3 +80,4 @@ function stopSongs(){
         song.currenTime=0;
     })
 }
+
