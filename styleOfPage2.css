@@ -5,8 +5,11 @@ body{
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    display: flex;
+    justify-content: center;
     
 }
+/****************************************expending-card****************************/
 .countainer{
     display: flex;
     align-items: center;
@@ -30,3 +33,30 @@ body{
 .panel.active{
     flex: 2;
 }
+/*******************************auto-text-effect**************************/
+.auto-text{
+    position: absolute;
+    top: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30vh;
+}
+.auto-text > div{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 25px;
+    padding: 5px 5px;
+    font-size: 30px;
+    width: auto;
+}
+.input{
+    display: flex;
+    text-align: center;
+    width: 45px;
+    padding: 10px;
+    border: none;
+    margin-left: 50px;
+ }
