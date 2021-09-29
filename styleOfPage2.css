@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Koh+Santepheap&display=swap');
+body{
+    background-image: url('img/wallpaper.jpg');
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    
+}
+.countainer{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 97vw;
+    margin: 0;
+    
+}
+.panel{
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 95vh;
+    flex: 0.2;
+    cursor: pointer;
+    border-radius: 90px;
+    margin: 10px 5px;
+    position: relative;
+    transition: flex 1s ease-in;
+}
+.panel.active{
+    flex: 2;
+}
