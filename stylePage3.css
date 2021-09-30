@@ -77,3 +77,37 @@ button:focus{
      
     transform: translateY(-100%);
 }
+/*******************************random-image-feed****************************/
+.feed-img{
+    /* position: absolute; */
+    top:700px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    left: 0;
+    right: 0;
+    
+    width: 100%;
+}
+.feed-img > h1{
+    text-align: center;
+    margin: 10px 0 0;
+}
+
+.feed-img .container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container img{
+    object-fit: cover;
+    margin: 10px;
+    height: 300px;
+    width: 300px;
+    max-width: 100%;
+}
